@@ -1,0 +1,46 @@
+/* Flexbox layout to display coffee and breakfast options side by side */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the items */
+    gap: 20px; /* Spacing between images */
+}
+
+/* Style each image container */
+.gallery-item {
+    width: 200px; /* Fixed width to ensure uniformity */
+    text-align: center;
+}
+
+/* Make all images the same fixed size */
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Ensures the image scales properly to fit the fixed dimensions */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for hover */
+}
+
+/* Hover effect for images */
+.gallery-item img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+/* Add some style for the links */
+.gallery-item a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+}
+
+/* Hover effect for links */
+.gallery-item a:hover {
+    color: #ff6600; /* Change link color on hover */
+    transition: color 0.3s ease-in-out;
+}

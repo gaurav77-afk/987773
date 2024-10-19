@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Dhakal's Chai Cafe</title>
+<style>
+        /* Flexbox container for left and right alignment */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto; /* Center the container */
+        }
+
+        /* Left column (contact details) */
+        .contact-info {
+            width: 45%; /* Adjust the width to split the content */
+        }
+
+        /* Right column (opening hours) */
+        .opening-hours {
+            width: 45%; /* Adjust the width to split the content */
+        }
+
+        /* Optional: Add some margin between sections for clarity */
+        .contact-info h1, .opening-hours h2 {
+            margin-bottom: 10px;
+        }
+
+
+ /* Full-width Slider container */
+    .slider {
+      position: relative;
+      width: 100vw; /* Full viewport width */
+      margin: 0 auto;
+      overflow: hidden;
+      height: 300px; /* Fixed height for the slider */
+    }
+
+    /* Slide container */
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%; /* Set to 300% for 3 slides (adjust based on the number of slides) */
+    }
+
+    /* Each slide takes full viewport width */
+    .slide {
+      min-width: 100vw; /* Each slide takes full viewport width */
+      box-sizing: border-box;
+    }
+
+    /* Force all images to have the same size */
+    .slide img {
+      width: 100vw; /* Full viewport width */
+      height: 300px; /* Fixed height */
+      object-fit: cover; /* Ensure the image fits without distortion */
+    }
+
+    /* Navigation arrows */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 2rem;
+      color: white;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.5);
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
+    }
+
+  
+
+
+    </style>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+   <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact</a>
+        <a href="aboutus.html">About us</a>
+        <a href="faq.html">FAQ's</a>
+ <!-- Logo (positioned via CSS) -->
+        <div class="logo">
+            <img src="logo.png" alt="Dhakal's Chai Logo">
+        </div>
+    </div>
+
+
+<!-- Slider Section -->
+  <div class="slider">
+    <div class="slides">
+      <!-- Slide 1 -->
+      <div class="slide">
+        <img src="cappuccino.png" alt="Slide 1">
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <img src="english.png" alt="Slide 2">
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <img src="continental.png" alt="Slide 3">
+      </div>
+    </div>
+
+    <!-- Navigation arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+
+
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <div class="contact-info">
+            <h1>Contact</h1>
+            <p><strong>Address:</strong><br> 32-40 Kerr Parade, Auburn</p>
+            <p><strong>Phone:</strong><br> 0415402684</p>
+        </div>
+        <div class="opening-hours">
+            <h2>Opening Hours:</h2>
+            <p>Monday: 6am-6pm</p>
+            <p>Tuesday: 6am-6pm</p>
+            <p>Wednesday: 6am-6pm</p>
+            <p>Thursday: 6am-6pm</p>
+            <p>Friday: 6am-6pm</p>
+            <p>Saturday: 6am-6pm</p>
+            <p>Sunday: Closed</p>
+        </div>
+    </div>
+
+
+ <!-- Footer -->
+    <div class="footer">
+       <I>"More than just chai, it's an experience."</i>
+    </div>
+
+
+  <!-- JavaScript -->
+  <script src="slider.js"></script>
+
+</body>
+</html>
